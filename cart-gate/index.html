@@ -42,6 +42,7 @@ textarea, input { display: block; width: 100%; box-sizing: border-box; margin: 6
 .shots figcaption { color: var(--ink-2); font-size: 14px; margin-top: 6px; }
 figure { margin: 0; }
 .links a { margin-right: 18px; font-weight: 600; }
+a.after { font-size: 14px; margin-left: 8px; }
 footer { margin-top: 48px; color: var(--ink-3); font-size: 13px; }
 </style>
 </head>
@@ -53,9 +54,9 @@ footer { margin-top: 48px; color: var(--ink-3); font-size: 13px; }
 <p class="links"><a href="https://github.com/Denzil10/cart-gate/releases">Download</a><a href="https://github.com/Denzil10/cart-gate">Source</a><button data-like="cart-gate">♥ I like it</button></p>
 <div class="shots"><figure><img src="before.png" alt="Coca Cola in the cart: the gate covers Zepto&#x27;s pay bar." loading="lazy"><figcaption>Coca Cola in the cart: the gate covers Zepto&#x27;s pay bar.</figcaption></figure><figure><img src="after.png" alt="Coca Cola removed: the gate lifts and Pay Now is back." loading="lazy"><figcaption>Coca Cola removed: the gate lifts and Pay Now is back.</figcaption></figure></div>
 <div class="box">
-<form data-app="cart-gate" data-kind="waitlist"><label>Tell me when the complete version ships<input type="email" name="email" placeholder="you@example.com" required></label><button>Notify me</button> <span class="sent"></span></form>
+<form id="subscribe" data-app="cart-gate" data-kind="subscribe" data-done="You are in. A short welcome email arrives within a day."><label>Get my next build first<input type="email" name="email" placeholder="you@example.com" required></label><p class="note">One email when I ship something new: what I built, the real numbers and a one-click vote on what I build next. Founder price if anything ever goes paid.</p><button>Subscribe</button> <span class="sent"></span></form>
 <form data-app="cart-gate" data-kind="feedback"><label>Feedback, a bug or an idea for it<textarea name="text" rows="3" maxlength="2000" placeholder="What happened, or what it should do."></textarea></label><button>Send</button> <span class="sent"></span></form>
-<p class="note">The ♥, email and text boxes send what you enter, and which app it is about, to a Google Form only I read. Nothing else is collected and nothing is published. An email is used once, to tell you the complete version is out.</p></div>
+<p class="note">The ♥, email and text boxes send what you enter, and which page it came from, to a Google Form only I read. Nothing else is collected and nothing is published. An email gets a welcome, then one email per new build; every email has a one-click unsubscribe.</p></div>
 <footer><p>By <a href="https://denzil10.github.io/">Denzil Nelson</a>, AI Engineer · <a href="https://github.com/Denzil10/lab">source</a></p></footer>
 </main>
 <script src="../signals.js"></script>
