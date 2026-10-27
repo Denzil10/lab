@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cart Gate: Android app, preview</title>
+<meta name="description" content="Covers the pay button in shopping and food-delivery apps while the cart holds junk food; remove the item and it lifts. On-device, no internet permission.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Cart Gate: Android app, preview">
+<meta property="og:description" content="Covers the pay button in shopping and food-delivery apps while the cart holds junk food; remove the item and it lifts. On-device, no internet permission.">
+<meta property="og:url" content="https://denzil10.github.io/lab/cart-gate/">
+<meta property="og:image" content="https://denzil10.github.io/lab/cart-gate/card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://denzil10.github.io/lab/cart-gate/card.png">
+<link rel="canonical" href="https://denzil10.github.io/lab/cart-gate/">
+<style>
+:root { --bg: #fbfaf7; --panel: #f2f0ea; --line: #dcd9d0; --ink: #0d0d0c; --ink-2: #4f4e4a; --ink-3: #7a7973; --accent: #2a78d6; --warm: #c4501f; color-scheme: light; }
+@media (prefers-color-scheme: dark) { :root { --bg: #171716; --panel: #212120; --line: #363633; --ink: #f0efea; --ink-2: #c3c2b8; --ink-3: #8e8d85; --accent: #6da7ec; --warm: #f08a5d; color-scheme: dark; } }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.6 ui-sans-serif, -apple-system, "Segoe UI", sans-serif; }
+main { max-width: 720px; margin: 0 auto; padding: 48px 20px 64px; }
+a { color: var(--accent); }
+h1 { font: 600 40px/1.1 "Iowan Old Style", Palatino, Georgia, serif; margin: 0 0 12px; letter-spacing: -0.02em; }
+.lede { color: var(--ink-2); margin: 0 0 28px; }
+ul { list-style: none; padding: 0; display: grid; gap: 12px; }
+li { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 14px 18px; }
+li a { font-weight: 600; font-size: 19px; }
+li span { float: right; font: 12px ui-monospace, Menlo, monospace; color: var(--ink-3); }
+li p { margin: 6px 0 0; color: var(--ink-2); }
+button { font: inherit; font-size: 15px; padding: 6px 14px; border-radius: 8px; border: 1px solid var(--line); background: var(--bg); color: var(--ink); cursor: pointer; }
+button[data-like] { color: var(--warm); }
+button:disabled { cursor: default; opacity: 0.8; }
+form { margin: 0 0 18px; }
+label { display: block; font-weight: 600; margin-bottom: 6px; }
+textarea, input { display: block; width: 100%; box-sizing: border-box; margin: 6px 0 8px; font: inherit; font-weight: 400; padding: 8px 10px; border-radius: 8px; border: 1px solid var(--line); background: var(--panel); color: var(--ink); }
+.sent { color: var(--ink-3); font-size: 14px; }
+.box { border-left: 3px solid var(--warm); padding: 2px 0 2px 16px; margin-top: 36px; }
+.note { color: var(--ink-3); font-size: 13px; }
+.shots { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 24px 0; }
+.shots img { width: 100%; border: 1px solid var(--line); border-radius: 10px; }
+.shots figcaption { color: var(--ink-2); font-size: 14px; margin-top: 6px; }
+figure { margin: 0; }
+.links a { margin-right: 18px; font-weight: 600; }
+footer { margin-top: 48px; color: var(--ink-3); font-size: 13px; }
+</style>
+</head>
+<body>
+<main>
+<p class="note"><a href="../">Lab</a> · Android app, preview · 2026-10-27</p>
+<h1>Cart Gate</h1>
+<p class="lede">Covers the pay button in shopping and food-delivery apps while the cart holds junk food; remove the item and it lifts. On-device, no internet permission.</p>
+<p class="links"><a href="https://github.com/Denzil10/cart-gate/releases">Download</a><a href="https://github.com/Denzil10/cart-gate">Source</a><button data-like="cart-gate">♥ I like it</button></p>
+<div class="shots"><figure><img src="before.png" alt="Coca Cola in the cart: the gate covers Zepto&#x27;s pay bar." loading="lazy"><figcaption>Coca Cola in the cart: the gate covers Zepto&#x27;s pay bar.</figcaption></figure><figure><img src="after.png" alt="Coca Cola removed: the gate lifts and Pay Now is back." loading="lazy"><figcaption>Coca Cola removed: the gate lifts and Pay Now is back.</figcaption></figure></div>
+<div class="box">
+<form data-app="cart-gate" data-kind="waitlist"><label>Tell me when the complete version ships<input type="email" name="email" placeholder="you@example.com" required></label><button>Notify me</button> <span class="sent"></span></form>
+<form data-app="cart-gate" data-kind="feedback"><label>Feedback, a bug or an idea for it<textarea name="text" rows="3" maxlength="2000" placeholder="What happened, or what it should do."></textarea></label><button>Send</button> <span class="sent"></span></form>
+<p class="note">The ♥, email and text boxes send what you enter, and which app it is about, to a Google Form only I read. Nothing else is collected and nothing is published. An email is used once, to tell you the complete version is out.</p></div>
+<footer><p>By <a href="https://denzil10.github.io/">Denzil Nelson</a>, AI Engineer · <a href="https://github.com/Denzil10/lab">source</a></p></footer>
+</main>
+<script src="../signals.js"></script>
+</body>
+</html>
